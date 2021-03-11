@@ -116,3 +116,17 @@ window.onload = function(){
   },0
  )
 }
+console.log(document.documentElement.clientWidth)
+if(document.documentElement.clientWidth>500){
+  window.alert('请使用手机浏览器或者按F12进入调试模式打开本网页，以保证浏览效果')
+ const image = document.createElement('img')
+ image.src='https://www.hualigs.cn/image/6049f20136118.jpg'
+ image.style.position = 'fixed'
+ image.style.left='50%'
+ image.style.top='50%'
+ image.style.transform ='translate(-50%,-50%)'
+ image.style.boxShadow = ' 0 0 10px rgba(0,0,0,0.25)'
+ document.body.appendChild(image)
+
+}
+

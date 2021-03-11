@@ -6,7 +6,7 @@ const path = require('path')
 
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ?
-        '/project-vue-1/' : '/',
+        '/project-vue-1-show/' : '/',
     lintOnSave: false,
 
     chainWebpack: config => {

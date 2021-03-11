@@ -6,6 +6,7 @@ import Labels from '../views/Labels.vue';
 import Statistics from '../views/Statistics.vue';
 import NotFound from '@/views/NotFound.vue'
 import EditLabel from '@/views/EditLabel.vue'
+import { Model } from 'vue-property-decorator';
 
 Vue.use(VueRouter);
 
@@ -49,7 +50,8 @@ const routes: Array<RouteConfig> = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode:'hash'
 })
 
 export default router
