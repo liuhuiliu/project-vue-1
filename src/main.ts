@@ -8,6 +8,7 @@ import Layout from '@/components/Layout.vue'
 import Icons from '@/components/Icons.vue'
 import tagListModel from './models/tagListModel'
 import recordListModel from './models/recordListModel'
+import picture from '@/assets/qrcode.png';
 
 Vue.config.productionTip = false
 
@@ -118,9 +119,10 @@ window.onload = function(){
 }
 console.log(document.documentElement.clientWidth)
 if(document.documentElement.clientWidth>500){
-  window.alert('请使用手机浏览器或者按F12进入调试模式打开本网页，以保证浏览效果')
+  window.alert('请使用手机浏览器或者按F12进入调试模式刷新本网页，以保证浏览效果')
  const image = document.createElement('img')
- image.src='https://www.hualigs.cn/image/6049f20136118.jpg'
+ console.log(picture)
+ image.src= picture
  image.style.position = 'fixed'
  image.style.left='50%'
  image.style.top='50%'
